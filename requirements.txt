@@ -1,0 +1,15 @@
+# Minimum requirements - candidates may add more
+# They need at least ONE of these LLM client libraries:
+# openai>=1.0.0
+# anthropic>=0.18.0
+# groq>=0.4.0
+
+# Or they can use Ollama (no pip package needed for HTTP API)
+# Or any other LLM provider of their choice
+
+# Base requirements
+anthropic>=0.18.0
+python-dotenv>=1.0.0
+rich>=13.0.0
+
+

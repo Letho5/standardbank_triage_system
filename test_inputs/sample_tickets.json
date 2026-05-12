@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TEST-001",
+    "message": "I was charged R450 for a data bundle I never bought. My account number is ACC-78432. Please reverse this immediately.",
+    "notes": "Standard billing complaint, clear entities"
+  },
+  {
+    "id": "TEST-002",
+    "message": "Eish, there's no signal here in Soweto for 3 days now. I can't even make calls. My number is 0712345678. When are you fixing this?",
+    "notes": "Network issue with SA slang, location and phone number present"
+  },
+  {
+    "id": "TEST-003",
+    "message": "Julle het my nommer geport sonder my toestemming! Ek het nie hiervoor gevra nie. My nommer is 0823456789. Dis fraud!",
+    "notes": "Afrikaans message - fraud/porting complaint"
+  },
+  {
+    "id": "TEST-004",
+    "message": "Listen here, I've been calling your useless call centre for TWO WEEKS. Nobody helps. Nobody calls back. I'm going to ICASA and the newspapers. This is DISGUSTING service. Reference REF-445566.",
+    "notes": "Angry customer, service complaint, high urgency"
+  },
+  {
+    "id": "TEST-005",
+    "message": "my airtime gone",
+    "notes": "Very short message, minimal context - tool must still produce valid output"
+  },
+  {
+    "id": "TEST-006",
+    "message": "Sawubona, ngicela usizo. I-account yami i-blocked and I can't buy bundles. I went to the store in Umlazi but they said I must call. I called but the line just rings. Angazi what to do anymore. My number is 0734567890.",
+    "notes": "Mixed Zulu/English, service issue, multiple touchpoints mentioned"
+  },
+  {
+    "id": "TEST-007",
+    "message": "Hi there! Just wanted to say thanks to Thabo at the Sandton branch. He sorted out my fibre installation in 20 minutes after I'd been waiting 3 weeks. Great service when you actually get the right person!",
+    "notes": "Positive feedback - tool should handle non-complaints too"
+  },
+  {
+    "id": "TEST-008",
+    "message": "So basically what happened is that last month I upgraded my phone right, and they said the new contract would be R399 per month but now I'm seeing R650 on my statement and when I called they said it's because of the handset fee but nobody told me about that and also my old number was supposed to be transferred but it's still on the old SIM and I can't get my WhatsApp back and the store in Menlyn said it's not their problem and I must call and the call centre said I must go to the store so I'm just going in circles and nobody is helping me and I'm paying for two contracts now which is R1049 per month total and I can't afford that please help",
+    "notes": "Very long rambling message with multiple issues - tests summarisation ability"
+  },
+  {
+    "id": "TEST-009",
+    "message": "Someone stole my phone and they're using my SIM. I can see calls being made on my account to numbers I don't know. The phone was taken in Hillbrow last night. I need the SIM blocked NOW. My number is 0845678901 and account ACC-99123.",
+    "notes": "Fraud/theft - critical urgency, multiple entities"
+  },
+  {
+    "id": "TEST-010",
+    "message": "🤬🤬🤬 FIX YOUR NETWORK!!! Load shedding ended 4 hours ago but still no signal in Khayelitsha. We PAY for this service!!! 🤬",
+    "notes": "Emoji-heavy, angry, network issue with SA context (load shedding)"
+  }
+]
