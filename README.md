@@ -2,7 +2,7 @@
 
 > An LLM-powered triage engine that turns raw customer support messages into structured tickets — built for South Africa's multilingual banking and telecoms reality.
 
-Standard Bank Internship Challenge 2 · Submitted by Sinqobile
+Standard Bank Internship Challenge 2 · Submitted by Lethukuthula Mthiyane
 
 ---
 
@@ -76,17 +76,20 @@ That's it. You're ready to triage.
 | `python tests.py` | Run the full test suite (15 cases) |
 
 ---
-
 ## How It Works
-   
- Raw customer   ──▶  System prompt   ──▶  Validated JSON  
-  message             + Claude API           ticket       
 
-    │
-    ▼
-  Rich terminal   
-    output       
-
+```
+┌──────────────────┐     ┌─────────────────┐     ┌──────────────────┐
+│  Raw customer    │ ──▶ │  System prompt  │ ──▶ │  Validated JSON  │
+│     message      │     │   + Claude API  │     │     ticket       │
+└──────────────────┘     └─────────────────┘     └──────────────────┘
+                                                          │
+                                                          ▼
+                                                 ┌──────────────────┐
+                                                 │  Rich terminal   │
+                                                 │     output       │
+                                                 └──────────────────┘
+```
 
 Each module has one responsibility:
 
@@ -158,17 +161,6 @@ Each test verifies that every field in the output contains a legal value from th
 
 **Three-retry exponential backoff.** Rate limits need time to reset. Progressive backoff gives the API breathing room.
 
----
-
-## What I'd Add With More Time
-
-- Mocked unit tests that exercise parsing and fallback paths without burning API tokens
-- Expected-value assertions on sample tickets to catch prompt regressions, not just structural ones
-- Per-field confidence scores from a second model pass
-- Explicit prompt versioning to support A/B testing
-- Async batch processing for high-volume queues
-
----
 
 ## Built With
 
